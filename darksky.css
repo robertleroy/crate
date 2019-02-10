@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'darksky';
   src:
-    url('fonts/darksky.ttf?xzk4bu') format('truetype'),
-    url('fonts/darksky.woff?xzk4bu') format('woff'),
-    url('fonts/darksky.svg?xzk4bu#darksky') format('svg');
+    url('./fonts/darksky.ttf?xzk4bu') format('truetype'),
+    url('./fonts/darksky.woff?xzk4bu') format('woff'),
+    url('./fonts/darksky.svg?xzk4bu#darksky') format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -44,7 +44,12 @@
 .active {
   color: $dodgerOrange;
 }
- app.component.ts
+```
+
+
+
+#### app.component.ts
+```ts
 import { Component, OnInit } from '@angular/core';
 import { routerFade } from './_animations/animations';
 

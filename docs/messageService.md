@@ -1,5 +1,27 @@
 ## BehaviorSubject
 
+
+#### data.service.ts
+```ts
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+
+import { Data } from '../entities/data';
+
+@Injectable()
+export class DataService {
+
+  private dataSource = new BehaviorSubject({});
+
+  constructor() { }
+
+  updateData(data){
+    this.dataSource.next(data);
+  }
+  
+}
+```
+
 #### app.ts
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -27,24 +49,3 @@ export class AppComponent implements OnInit {
 }
 ```
 
-
-#### data.service.ts
-```ts
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-
-import { Data } from '../entities/data';
-
-@Injectable()
-export class DataService {
-
-  private dataSource = new BehaviorSubject({});
-
-  constructor() { }
-
-  updateData(data){
-    this.dataSource.next(data);
-  }
-  
-}
-```

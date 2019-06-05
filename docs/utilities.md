@@ -40,3 +40,14 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+
+#### randomHex
+```ts  
+  randomHex(x = 6) {
+    let str = '';
+    for (let i = 0; i < x; ++i) {
+      str += Math.round(Math.random()*15).toString(16);
+    }   
+    return str;  
+  }
+```

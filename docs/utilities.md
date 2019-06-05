@@ -50,4 +50,7 @@ export class AppComponent implements OnInit {
     }   
     return str;  
   }
+
+  // id = randomHex(8);
+  // returns an 8 digit hex string
 ```

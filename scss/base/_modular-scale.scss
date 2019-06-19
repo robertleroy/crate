@@ -1,0 +1,83 @@
+// #region _modular-scale.scss =================
+:root {
+  --hero: 32px;
+  --h1: 28px;
+  --h2: 24px;
+  --h3: 22px;
+  --h4: 20px;
+  --h5: 18px;
+  --h6: 16px;
+  --h7: 14px;
+  --h8: 13px;
+  --h9: 12px;
+  --lh: 24px;
+  --lh2: 36px;
+  --root: 12px;
+  
+  @include media(640px) {
+   --hero: 34px;
+   --h1: 30px;
+   --h2: 26px;
+   --h3: 23px;
+   --h4: 21px;
+   --h5: 19px;
+   --h6: 17px;
+   --h7: 15px;
+   --h8: 14px;
+   --h9: 13px;
+   --lh: 26px;
+   --lh2: 39px;
+   --root: 13px;
+  }
+  
+  @include media(800px) {
+   --hero: 36px;
+   --h1: 32px;
+   --h2: 27px;
+   --h3: 25px;
+   --h4: 23px;
+   --h5: 20px;
+   --h6: 18px;
+   --h7: 16px;
+   --h8: 15px;
+   --h9: 14px;
+   --lh: 28px;
+   --lh2: 42px;
+   --root: 14px;
+  }
+  
+  @include media(1600px) {
+   --hero: 40px;
+   --h1: 35px;
+   --h2: 30px;
+   --h3: 28px;
+   --h4: 25px;
+   --h5: 23px;
+   --h6: 20px;
+   --h7: 18px;
+   --h8: 16px;
+   --h9: 15px;
+   --lh: 30px;
+   --lh2: 45px;
+   --root: 15px;
+  }
+  
+  // @include media(1600px) {
+  //  --hero: 44px;
+  //  --h1: 39px;
+  //  --h2: 33px;
+  //  --h3: 30px;
+  //  --h4: 28px;
+  //  --h5: 25px;
+  //  --h6: 22px;
+  //  --h7: 19px;
+  //  --h8: 18px;
+  //  --h9: 17px;
+  //  --lh: 34px;
+  //  --lh2: 51px;
+  //  --root: 17px;
+  // }
+ } // :root 
+ // #endregion MODULAR SCALE =================
+ 
+ 

@@ -1,0 +1,89 @@
+// _mixins.scss //
+
+@mixin media($break) {
+  @media (min-width: $break) { @content; }
+}
+
+// @include absolute(100px, 100px, auto, auto);
+@mixin absolute($top, $right, $bottom, $left) {
+   position: absolute; 
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+
+
+// @include ellipsis();
+@mixin ellipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+
+// @include ratio(16,9);
+@mixin ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+
+// When using ::before and ::after
+@mixin pseudo($display: inline-block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+// @include prefix(transform, scale3d(2.5, 2, 1.5));
+@mixin prefix($prop, $value) {
+   -webkit-#{$prop}: #{$value};
+   -moz-#{$prop}: #{$value};
+   -ms-#{$prop}: #{$value};
+   -o-#{$prop}: #{$value};
+   #{$prop}: #{$value};
+}
+
+
+
+
+
+
+// #region SHAPE ================= //
+//  @include triangle(); 
+//  @include triangle(up, 1rem, #555555);
+@mixin triangle($direction: down, $size: 6px, $color: #555) {
+   width: 0;
+   height: 0;
+   @if ($direction == up) {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-bottom: $size solid $color;
+   }
+   @else if ($direction == right) {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent; 
+      border-left: $size solid $color;
+   }
+   @else if ($direction == down) {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-top: $size solid $color;
+   }
+   @else { // left
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent; 
+      border-right: $size solid $color;
+   }
+}
+// #endregion SHAPE ================= //

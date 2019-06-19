@@ -15,8 +15,7 @@
 
 ## Tools
 
-[Material Palette Generator](https://material.io/design/color/#tools-for-picking-colors#root-container)
-
-[Also - Material Palette Generator](https://materialpalettes.com/)
-
-[Material Color Tool](https://material.io/tools/color/#!/?view.left=0&view.right=1&primary.color=6002ee&secondary.color=90ee02)
+###### Material Color Tools
+- [Material Palette Generator](https://material.io/design/color/#tools-for-picking-colors#root-container)
+- [Material Palette Generator - Clone](https://materialpalettes.com/)
+- [Material Color Tool](https://material.io/tools/color/#!/?view.left=0&view.right=1&primary.color=6002ee&secondary.color=90ee02)

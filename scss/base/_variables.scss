@@ -1,0 +1,43 @@
+// _variables.scss // 
+
+// #region FONT ==================== //
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+// $sans-serif: Lato, Roboto, sans-serif;
+$sans-serif: Lato, Roboto, sans-serif;
+$serif: Georgia, serif;
+$monospace: Menlo, monospace;
+$headingFont: Roboto, Lato, sans-serif;
+
+// #endregion FONT ==================== //
+
+
+// #region COLORS ================== //
+$backgroundColor: #FCFCFC !default;
+
+$fontColor: #494949 !default;
+$headingColor: #2E2E2E !default;
+$linkColor: #1E90FF  !default;
+$hoverColor: #85c2ff  !default;
+$muteColor: #b9c2cb !default;
+$white: #FFFFFF !default;
+
+$backgroundColor: #FCFCFC !default;
+
+$fontColor: #494949 !default;
+$headingColor: #2E2E2E !default;
+$linkColor: #1E90FF  !default;
+$hoverColor: #85c2ff  !default;
+$muteColor: #b9c2cb !default;
+$white: #FFFFFF !default;
+
+$codeBackgroundColor: #F5F4F2 !default;
+// #endregion COLORS ================== //
+
+
+
+// change in gridlines partial
+$showGrid: false;
+
+
+ 

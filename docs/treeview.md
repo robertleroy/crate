@@ -1,55 +1,5 @@
 ## Treeview
 
-#### animations.ts
-
-```ts
-import { trigger, transition, style, state, animate, query } from '@angular/animations';
-
-// collapse ======================== //
-export const collapse = trigger('collapse', [
-  state('collapsed', style({
-    height: 0,
-    paddingTop: 0,
-    paddingBottom: 0,
-    opacity: 0,
-    lineHeight: 0
-  })),
-
-  transition('collapsed => expanded', [
-    animate('0.1s ease-out', style({
-      height: '*',
-      paddingTop: '*',
-      paddingBottom: '*',
-      lineHeight: '*'
-    })),
-    animate('0.1s', style({ opacity: 1 }))
-  ]),
-
-  transition('expanded => collapsed', [
-    // animate('0.1s', style({ opacity: 0 })),
-    animate('0.2s ease-in') 
-  ]) 
-]);
-
-// rotate ======================== //
-export const rotate = trigger('rotate', [
-  state('up', style({
-    transform: 'rotate(-90deg)'
-  })),
-
-  transition('up => down', [
-    animate('0.1s ease-out', style({
-      transform: 'rotate(0deg)'
-    })),
-  ]),
-
-  transition('down => up', [
-    animate('0.1s ease-in')
-  ])
-]);
-```
-
-
 #### component.html
 
 ```html
@@ -104,8 +54,6 @@ the recursive expandall function to work. -->
 </div>
 ```
 
-
-
 #### treeview.scss
 
 ```scss
@@ -139,8 +87,6 @@ svg-icon {
   cursor: pointer;
 }
 ```
-
-
 
 #### treeview.ts
 ```ts
@@ -177,4 +123,53 @@ export class TreeviewComponent implements OnInit {
   }
 
 }
+```
+
+#### animations.ts
+
+```ts
+import { trigger, transition, style, state, animate, query } from '@angular/animations';
+
+// collapse ======================== //
+export const collapse = trigger('collapse', [
+  state('collapsed', style({
+    height: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    opacity: 0,
+    lineHeight: 0
+  })),
+
+  transition('collapsed => expanded', [
+    animate('0.1s ease-out', style({
+      height: '*',
+      paddingTop: '*',
+      paddingBottom: '*',
+      lineHeight: '*'
+    })),
+    animate('0.1s', style({ opacity: 1 }))
+  ]),
+
+  transition('expanded => collapsed', [
+    // animate('0.1s', style({ opacity: 0 })),
+    animate('0.2s ease-in') 
+  ]) 
+]);
+
+// rotate ======================== //
+export const rotate = trigger('rotate', [
+  state('up', style({
+    transform: 'rotate(-90deg)'
+  })),
+
+  transition('up => down', [
+    animate('0.1s ease-out', style({
+      transform: 'rotate(0deg)'
+    })),
+  ]),
+
+  transition('down => up', [
+    animate('0.1s ease-in')
+  ])
+]);
 ```

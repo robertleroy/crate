@@ -53,11 +53,13 @@
 #### accordion.ts
 ```ts
 import { Component, OnInit } from '@angular/core';
+import { collapse, rotate, fade } from '../../_animations/animations';
 
 @Component({
-  selector: 'app-accordion',
+  selector: 'accordion',
   templateUrl: './accordion.component.html',
-  styleUrls: ['./accordion.component.scss']
+  styleUrls: ['./accordion.component.scss'],
+  animations: [ collapse, rotate, fade ]
 })
 export class AccordionComponent implements OnInit {
 

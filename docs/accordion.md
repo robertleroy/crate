@@ -73,6 +73,7 @@ export class AccordionComponent implements OnInit {
 ```ts
 import { trigger, transition, style, state, animate } from '@angular/animations';
 
+// collapse ======================== //
 export const collapse = trigger('collapse', [
   state('collapsed', style({
     height: 0,
@@ -98,6 +99,8 @@ export const collapse = trigger('collapse', [
   ])
 ]);
 
+
+// rotate ======================== //
 export const rotate = trigger('rotate', [
   state('up', style({
     transform: 'rotate(90deg)'
@@ -114,11 +117,13 @@ export const rotate = trigger('rotate', [
   ])
 ]);
 
+
+// fade ======================== //
 export const fade = trigger('fade', [
   state('void', style({
     opacity: 0
   })),
-  transition('void <=> *', animate('200ms')),
+  transition('void <=> *', animate('0.3s')),
 ]);
 ```
 

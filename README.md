@@ -24,10 +24,9 @@
 # crate
 `Put your stuff in a crate`
 
-###### [Github](https://github.com/)
+- ###### [Github](https://github.com/)
 - [Github Gist](https://gist.github.com/)
 - [Gitbook](https://www.gitbook.com/)
-
 - [Stackblitz](https://stackblitz.com/@robertleroy)
 - [Angular](https://angular.io/)
 - [Angular Material](https://material.angular.io/)

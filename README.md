@@ -9,16 +9,12 @@
   - [Stackblitz](https://stackblitz.com/@robertleroy)
   - [Angular Material](https://material.angular.io/)
   - [Material Ui](https://material-ui.com/)
-
-
 - [w3school](https://www.w3schools.com/)
   - [Css Selectors](https://www.w3schools.com/cssref/css_selectors.asp)  
   - [Array methods](https://www.w3schools.com/js/js_array_methods.asp)
-
-
-  - Icons
-    - [Material Icons](https://material.io/tools/icons/?style=baseline)
-    - [Icomoon](https://icomoon.io/)
+- Icons
+  - [Material Icons](https://material.io/tools/icons/?style=baseline)
+  - [Icomoon](https://icomoon.io/)
 
 
 - [Colors](https://robertleroy.github.io/colors/)
@@ -27,7 +23,3 @@
 
 
 - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-
-- [title](link)
-- [title](link)
-- [title](link)

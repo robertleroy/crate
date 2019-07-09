@@ -1,6 +1,5 @@
+#### [Drivers Manual](https://www.ok.gov/dps/documents/2017%20Oklahoma%20Drivers%20Manual%20web.pdf)
 # Applying for an original driver license (for those over the age of 18)
-
-## [Manual](https://www.ok.gov/dps/documents/2017%20Oklahoma%20Drivers%20Manual%20web.pdf)
 
 | LICENSE TYPE   | APPLICATION | LICENSE | TOTAL  | RETEST | REPLACEMENT |
 |----------------|-------------|---------|--------|--------|-------------|

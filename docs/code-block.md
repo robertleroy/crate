@@ -56,11 +56,9 @@ export class CodeBlockComponent implements OnInit {
   @Input() title;
   @Input() lang;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {
-    console.log(this.lang);
-  }
+  ngOnInit() { }
 
 }
 ```

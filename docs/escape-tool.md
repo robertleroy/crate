@@ -9,14 +9,9 @@ escape code!
 </p>
 
 <textarea class="textIn" 
-          placeholder="escape( )"
-          (input)="escape()"
-          [(ngModel)]="textIn"></textarea>
-
-
-<p *ngIf="textIn">
-  output
-</p>
+    placeholder="escape( )"
+    (input)="escape()"
+    [(ngModel)]="textIn"></textarea>
 
 <div class="output">
   <p *ngIf="textIn">output</p>
@@ -27,13 +22,14 @@ escape code!
 
 ###### escape.scss
 ```scss
-@import '../../scss/imports';
+@import '../../../scss/imports';
 
 :host {
   display: block;
   padding: 1rem 2rem;
   background: #eee;
-  min-height: 250px;  
+  min-height: 250px;
+  
 }
 
 .textIn, .textOut {
@@ -59,10 +55,8 @@ escape code!
   overflow-y: auto;
 }
 
-
 .output {
   margin-top: 2rem;
-  
   .textOut {
     white-space: pre-wrap;
   }
@@ -76,12 +70,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'escape-tool',
   templateUrl: './escape-tool.component.html',
-  styleUrls: ['./escape-tool.component.css']
+  styleUrls: ['./escape-tool.component.scss']
 })
+
 export class EscapeToolComponent implements OnInit {
   textIn;
   textOut;
-  
+
   constructor() { }
 
   ngOnInit() {
@@ -104,8 +99,8 @@ export class EscapeToolComponent implements OnInit {
     return str.replace(/{|}|<|>|"|&/g,function(match) {return replaceChars[match];})  
   }   
 
-
 }
+
 ```
 
 ###### use

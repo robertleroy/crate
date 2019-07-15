@@ -18,7 +18,11 @@ escape code!
   output
 </p>
 
-<pre class="textOut" *ngIf="textIn">{{textOut}}</pre>
+<div class="output">
+  <p *ngIf="textIn">output</p>
+
+  <pre class="textOut" *ngIf="textIn">{{textOut}}</pre>
+</div>
 ```
 
 ###### escape.scss
@@ -55,13 +59,13 @@ escape code!
   overflow-y: auto;
 }
 
-.textOut {
-  white-space: pre-wrap;
-}
 
-p:last-of-type {
+.output {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  
+  .textOut {
+    white-space: pre-wrap;
+  }
 }
 ```
 

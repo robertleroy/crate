@@ -1,5 +1,27 @@
 ## Utilities
 
+#### copy_to_clipboard
+```html
+  <button (click)="copyText(output)">Copy Text</button>
+
+  <div class="textOut" #output>Copy this text</div>
+```
+
+```ts  
+  copyText(elem){
+
+    let selection = window.getSelection();
+    let range = document.createRange();
+
+    range.selectNodeContents(elem);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    
+    document.execCommand('copy');
+    selection.removeAllRanges();
+  }
+```
+
 #### loops.ts
 ```ts
   qty: number = 50;

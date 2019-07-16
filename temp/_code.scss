@@ -51,9 +51,10 @@ pre {
 
 code[highlight] {
   padding: 0;
-}
+} /* reset */
 
 $emphasis: rgba(0,0,0,0.03);
+// $emphasis: scale-color(wheat, $alpha: -80%);
 
 p code, div code,
 p code[highlight], div code[highlight] {
@@ -61,7 +62,7 @@ p code[highlight], div code[highlight] {
   color: scale-color($fontColor, $alpha: -10%);
   background: $emphasis;
   line-height: inherit;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.3rem;
   vertical-align: bottom;  
 }

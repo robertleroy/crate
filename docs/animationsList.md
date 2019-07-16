@@ -1,3 +1,4 @@
+```ts
 import { trigger, transition, style, state, animate, query } from '@angular/animations';
 
 const duration = '0.2s';
@@ -116,3 +117,4 @@ export const fade = trigger('fade', [
   })),
   transition('void <=> *', animate(timing)),
 ]);
+```

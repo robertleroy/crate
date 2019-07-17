@@ -1,4 +1,4 @@
-###### [Crate Repository](https://github.com/robertleroy/crate)
+###### [Crate Repository](https://github.com/robertleroy/crate) ~ *put yout stuff in a crate* ~
 
 - [CurrentFlow](https://robertleroy.github.io/currentflow/)
 

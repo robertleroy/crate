@@ -31,8 +31,10 @@
 
 - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
+
+- normalizer
 ```
-- normalizer 
   - <link rel="stylesheet" href="https://robertleroy.github.io/crate/css/normalizer.css">
   - url("https://robertleroy.github.io/crate/css/normalizer.css");
 ```
+

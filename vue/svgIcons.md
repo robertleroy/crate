@@ -4,8 +4,14 @@
 #### Use
 ```html
 <!-- Reference symbol through component slot or icon attribute -->
+
 <svg-icon>earth</svg-icon>
 <svg-icon icon="earth"/>
+
+<!-- add `btn` class or attribute to style button features -->
+
+<svg-icon icon="home" btn/>
+<svg-icon icon="home" class="btn"/>
 
 <!-- use font-size to change size -->
 <!-- viewBox attribute is also available -->

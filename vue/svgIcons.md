@@ -8,7 +8,8 @@
 <svg-icon>earth</svg-icon>
 <svg-icon icon="earth"/>
 
-<!-- add `btn` class or attribute to style button features -->
+<!-- add `btn` class or attribute to add button feature styles,
+                                    like cursor and hover color ... -->
 
 <svg-icon icon="home" btn/>
 <svg-icon icon="home" class="btn"/>

@@ -1,5 +1,4 @@
 ## [SvgIcon](https://github.com/robertleroy/crate/blob/master/vue/svgIcons.md)
----
 
 #### Use
 ```html

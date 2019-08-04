@@ -359,7 +359,7 @@ export default icons;
 
 
 <script>
-  import icons from "../assets/iconList.js"
+  import icons from "./iconList.js"
 
   export default {
     name: 'svg-icon',
@@ -404,7 +404,7 @@ export default icons;
 
 
 <style lang="scss" scoped>
-  @import "../scss/baseline";
+  @import "../../scss/baseline";
 
   svg {
     color: $fontColor;
@@ -438,7 +438,7 @@ import VueRouter from 'vue-router'
 import App from "./App.vue";
 
 import routes from './routes';
-import SvgIcon from './components/SvgIcon';
+import SvgIcon from './components/icons/SvgIcon';
 Vue.component('svg-icon', SvgIcon);
 
 Vue.config.productionTip = false;

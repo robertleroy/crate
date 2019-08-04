@@ -260,12 +260,12 @@ export class SvgIconComponent implements OnInit {
 
     <symbol id="clear_all" viewBox="0 0 24 24">
       <title>clear_all</title>
-      <path d="M6.984 6.984h14.016v2.016h-14.016v-2.016zM3 17.016v-2.016h14.016v2.016h-14.016zM5.016 12.984v-1.969h13.969v1.969h-13.969z"></path>
+      <path d="M6.984 6.984H21V9H6.984V6.984zM3 17.016V15h14.016v2.016H3zm2.016-4.032v-1.969h13.969v1.969H5.016z"/>
     </symbol>
 
     <symbol id="close" viewBox="0 0 24 24">
       <title>close</title>
-      <path d="M6.984 6.984H21V9H6.984V6.984zM3 17.016V15h14.016v2.016H3zm2.016-4.032v-1.969h13.969v1.969H5.016z"/>
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
     </symbol>
 
     <symbol id="cloudy" viewBox="0 0 24 24">

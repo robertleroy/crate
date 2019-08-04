@@ -88,7 +88,7 @@ export const iconList = [
     name: "check_box_checked",
     path: `<path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
     <path d="M16.979 7.431l-6.59 6.59-3.59-3.58-1.41 1.41 5 5 8-8z"/>`
-  }
+  },
   {
     name: "check_small",
     path: `<path d="M16.979 7.431l-6.59 6.59-3.59-3.58-1.41 1.41 5 5 8-8z"/>`

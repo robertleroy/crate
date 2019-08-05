@@ -1,3 +1,7 @@
+## Settings.md
+
+#### codesandbox editor
+```json
 {
   "editor.formatOnSave": false,
   "editor.fontSize": 15,
@@ -13,3 +17,4 @@
   "files.insertFinalNewline": true,
   "editor.wordWrap": "on"
 }
+```

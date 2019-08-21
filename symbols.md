@@ -1,10 +1,12 @@
 #### currency
 
+```
 Dollar	$		
 Cent ¢
 Euro	€
 Pound	£		
 Yen	¥
+```
 
 | currency 	| # 	|   	| currency 	| # 	
 |----------	|---	|---	|----------	|---	|

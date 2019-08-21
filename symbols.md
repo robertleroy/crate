@@ -2,7 +2,7 @@
 
 ```
 Dollar	$		
-Cent ¢
+Cent  ¢
 Euro	€
 Pound	£		
 Yen	¥

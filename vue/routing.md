@@ -1,116 +1,107 @@
-## Vue Routing
+## Router
+
+#### Install
+```js
+// NPM
+npm install vue-router
+```
+
+```html
+<!-- html --> 
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+```
 
 #### main.js
 ```js
-// main.js
-
 import Vue from "vue";
-import VueRouter from 'vue-router'
 import App from "./App.vue";
-
-import routes from './routes';
-import SvgIcon from './components/icons/SvgIcon';
-Vue.component('svg-icon', SvgIcon);
+import router from './router';
 
 Vue.config.productionTip = false;
 
-Vue.use(VueRouter)
-
-const router = new VueRouter({mode: 'history', routes});
-
-
 new Vue({
   router,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount("#app");
 ```
 
-#### routes.js
+#### router.js
 ```js
-// routes.js
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Error from './pages/404.vue';
+Vue.use(VueRouter)
 
+export default new VueRouter({
+  mode: 'history',
+  routes: [{
+      path: '/',
+      redirect: Home
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
+    },
+    { 
+      path: '/404',
+      name: '404',
+      component: {
+        template: `<p>404 - Page Not Found</p>`
+      }
+    },
+    { 
+      path: '*', 
+      redirect: '/404' 
+    }, 
+  ]
+})
 
-const routes = [
-  { path: '/home', component: Home, name: 'home' },
-  { path: '/about', component: About, name: 'about' },
-  { path: '*', redirect: '/home' },
-  { path: '/404', component: Error, name: '404' },
-];
-
-export default routes;
 ```
 
-#### app.vue
+#### component.html
 ```html
+<router-link to="/">Home</router-link>
+<router-link to="/about">About</router-link>
 
-<template>
-  <div id="app">
-    ~~~
+<section class="router">  
+  <transition name="fade" mode="out-in">
+    <router-view></router-view>
+  </transition>
+</section>
+```
 
-    <nav>
-      <router-link to='/home'>Home</router-link>
-      <router-link to='/about'>About</router-link>
-    </nav> 
-
-    <main> 
-      <transition name="fade"  mode="out-in">
-        <router-view></router-view>
-      </transition>
-    </main>
-    
-    ~~~
-
-  </div>  
-</template>
-
-
-<script>
-export default {
-  name: "App",
-  data() {
-    return {
-      title: "Hello World!",
-    };
-  }
-};
-</script>
-
-
-<style lang="scss">
+#### component.scss
+```scss
+<style lang='scss' scoped>
   @import "./scss/baseline";
 
-  ~~~
+  .fade-enter-active, .fade-leave-active {
+    transition: all 0.5s ;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
 
-  nav {
-    padding: 1rem 2rem;
+  .router {
+    position: relative;
 
-    a {
-      display: block;
-      color: $linkColor;      
-    }
-
-    .router-link-active {
-      color: complement($linkColor);
-
-      &:hover {
-        color: scale-color(complement($linkColor), $alpha: -40%);
-      }
+    > * {
+      position: absolute;
     }
   }
   
-  ~~~
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.2s ease;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
+  router-link-active {
+    color: complement($linkColor);
+  }
 
 </style>
 ```

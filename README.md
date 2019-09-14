@@ -1,10 +1,7 @@
 ###### [Crate Repository](https://github.com/robertleroy/crate) ~ *put your stuff in a crate* ~
 
-- Angular
-  - [CurrentFlow](https://robertleroy.github.io/currentflow/)
-
-- Vue
-  - [Card-Trick](https://robertleroy.github.io/card-trick/)
+- [CurrentFlow](https://robertleroy.github.io/currentflow/)
+- [Card-Trick](https://robertleroy.github.io/card-trick/)
 
 - [Github](https://github.com/)
   - [Github/Crate](https://github.com/robertleroy/crate)

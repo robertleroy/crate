@@ -1,7 +1,9 @@
 ###### [Crate Repository](https://github.com/robertleroy/crate) ~ *put your stuff in a crate* ~
 
-- [CurrentFlow](https://robertleroy.github.io/currentflow/)
-- [Card-Trick](https://robertleroy.github.io/card-trick/)
+- Working sites (I think)
+  - [CurrentFlow](https://robertleroy.github.io/currentflow/)
+  - [Card-Trick](https://robertleroy.github.io/card-trick/)
+  - [Colors](https://robertleroy.github.io/)
 
 
 - [Github](https://github.com/)

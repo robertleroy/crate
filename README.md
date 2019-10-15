@@ -3,7 +3,7 @@
 - Working sites (I think)
   - [CurrentFlow](https://robertleroy.github.io/currentflow/)
   - [Card-Trick](https://robertleroy.github.io/card-trick/)
-  - [Colors](https://robertleroy.github.io/)
+  - [Colors](https://robertleroy.github.io/colors/home/)
   - [Converter](https://robertleroy.github.io/vue-converter/)
   - [Radio](https://robertleroy.github.io/radio/)
   - [Clock](https://robertleroy.github.io/clock/)

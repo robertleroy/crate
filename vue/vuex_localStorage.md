@@ -1,6 +1,6 @@
 ## Vuex / Local Storage  
   
-`const Version = "0.0.1"`  
+### `const Version = "0.0.1"`  
 This allows easy resetting of storage.   
 Change in Version number triggers storage reset. 
 
@@ -26,7 +26,7 @@ const store = new Vuex.Store({
 ```
 
   
-`initializeStore`  
+### `initializeStore`  
 Check if `const Version` matches `store.version`
 1. if so, merge storage into `$store.state`.
 2. if not, ignore storage and update  
@@ -55,9 +55,10 @@ mutations: {
 },
 ```  
    
-`beforeCreate()`  
+### `beforeCreate()`  
 Call `initializeStore` and  subscribe to mutations.  
-When `$state.store` is updated save `state` to `store`.  
+When `$state.store` is changed / gets mutation  =>  
+save `state` to `store`.  
 
 ``` js
 beforeCreate() {
@@ -70,9 +71,10 @@ beforeCreate() {
 
   });
 },
-```  
+```   
 
-Alternatively, create an object of select items to save.  
+Alternatively, save select items in an object.  
+Save the object to `store`.
 * note ~ `Json.stringify( store )` instead of `state`.
 
 ``` js

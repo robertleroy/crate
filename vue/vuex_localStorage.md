@@ -2,7 +2,7 @@
   
 `const Version = "0.0.1"`  
 This allows easy resetting of storage.   
-Change in Version number triggers reset. 
+Change in Version number triggers storage reset. 
 
 ``` js
 const Version = "0.0.1";

@@ -11,11 +11,13 @@ const store = new Vuex.Store({
   state: {
     version: '',
   },
-  mutations: {
-      
-  },
   getters: {
       
+  },
+  mutations: {
+    initializeStore(state) {
+      ...
+    }
   },
   actions: {
       

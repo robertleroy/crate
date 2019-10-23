@@ -8,29 +8,24 @@
 #### app.js
 ``` js
 Vue.component('checkbox', {
+template: `
+    <label class="checkbox btn">
+      <div class="icon-outlined">
+        {{checked ? 'check' : 'check_box_outline_blank'}}
+      </div>
+      <input ref="check" type="checkbox" 
+          v-bind:checked="checked"
+          v-on:change="$emit('change', $event.target.checked)">
+    </label>
+  `,
   model: {
     prop: 'checked',
     event: 'change'
   },
   props: {
     checked: Boolean
-  },
-  template: "#checkbox"
+  }
 })
-```
-
-#### index.html
-``` html
-<template id="checkbox">
-  <label class="checkbox btn">
-    <div class="icon-outlined">
-      {{checked ? 'check' : 'check_box_outline_blank'}}
-    </div>
-    <input ref="check" type="checkbox" 
-        v-bind:checked="checked"
-        v-on:change="$emit('change', $event.target.checked)">
-  </label>
-</template>
 ```
 
 #### style.scss

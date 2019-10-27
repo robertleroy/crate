@@ -33,19 +33,6 @@ currently just `right` and `left`.
 <div v-swipe:left="swipedLeft"></div> 
 ```  
 
-Save to file and import / register
-#### `app.js` 
-``` js
-import Vue from 'vue';
-import { swipe } from "./directives/swipe"; 
-	
-const app = new Vue({ 
-  el: '#app',
-  directives: {
-    swipe: swipe,
-	},
-	...
-```
 
 ## CSS Tips
 
@@ -66,11 +53,28 @@ touch-action: pan-x;
 ```
  can also be useful allowing a horizontal gesture only.  
 
-Currently the only directions supported are `right` and `left`, though extending to up and down should be a simple edit.
+Currently the only directions supported are `right` and `left`, though extending to up and down should be a simple edit.  
+
 
 ---  
----
----
+---  
+---  
+
+
+Save to file and import / register
+#### `app.js` 
+``` js
+import Vue from 'vue';
+import { swipe } from "./directives/swipe"; 
+	
+const app = new Vue({ 
+  el: '#app',
+  directives: {
+    swipe: swipe,
+	},
+	...
+```
+
 
 #### `./directives/swipe`
 

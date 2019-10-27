@@ -36,7 +36,7 @@ currently just `right` and `left`.
 
 ## CSS Tips
 
-It helps to set `user-select: none;` on the element that receives the swipe. Beware that this keeps users from selecting text while and interfering with the swipe, but it also keeps users from selecting text.
+It helps to set `user-select: none;` on the element that receives the swipe. Beware that this keeps users from selecting text and interfering with the swipe.  It also keeps users from selecting text.
 
 When swipeing on an object like an image the app may try to move the object with your swipe.  A conflict with the swipe and an aborted move.  Set `touch-action: none` to disable the windows default behavior.  
 

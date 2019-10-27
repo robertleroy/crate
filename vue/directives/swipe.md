@@ -42,6 +42,8 @@ When swipeing on an object like an image the app may try to move the object with
 
 `touch-action: pan-x;` can also be useful allowing a horizontal gesture only.  
 
+In some situations it may be usefull to make a `div >> .touch-mask` with a higher `z-index` to receive the gesture.  
+
 Currently the only directions supported are `right` and `left`, though extending to up and down should be a simple edit.  
 
 

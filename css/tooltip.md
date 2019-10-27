@@ -13,14 +13,15 @@
 ```
     
 - Add tooltip attribute... 
-`<div tooltip>` 
-or class to target element.
-`<div class="tooltip">`
+`<span tooltip>` 
+or class 
+`<span class="tooltip">`  
+to the target element.
 - Add a span with a tip attribute.
 `<div tip>`
-- Specify placement as needed
+- Specify placement if needed
 `<div tip="right">`
-- The textContent of the [tip] is the tooltip text 
+- The `textContent` of the `[tip]` is the tooltip text 
 
 
 #### Adjustment object for common CSS properties:

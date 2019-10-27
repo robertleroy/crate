@@ -12,12 +12,13 @@
 </div>  
 ```
     
-- Add tooltip attribute or class to target element.
-`<div tooltip>`
+- Add tooltip attribute... 
+`<div tooltip>` 
+or class to target element.
 `<div class="tooltip">`
 - Add a span with a tip attribute.
-- Specify placement as needed
 `<div tip>`
+- Specify placement as needed
 `<div tip="right">`
 - The textContent of the [tip] is the tooltip text 
 

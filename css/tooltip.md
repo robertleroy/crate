@@ -2,7 +2,7 @@
 
 ``` html
 /* tip on top */
-<div tooltip class="test"> text
+<div tooltip> text
   <span tip> tooltip info </span>
 </div>  
 

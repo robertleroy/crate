@@ -14,6 +14,15 @@ Add target elements `ID` as an `arg`.
 </p>
 ```
 
+#### app.js
+``` js
+import { copy } from "./directives/copy";
+
+directives: {
+  "copy": copy,
+},
+```
+
 
 ```js
 export const copy = ("copy", {

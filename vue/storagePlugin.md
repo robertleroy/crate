@@ -31,8 +31,8 @@ export const store = new Vuex.Store({
 #### storagePlugin.js
 ``` js
 export const storagePlugin = store => {
-  const store_key = "radio";
-  const Version = "0.0.3";
+  const store_key = "app";
+  const Version = "0.0.1";
 
   store.subscribe((mutation, state) => {
 

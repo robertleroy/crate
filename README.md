@@ -30,6 +30,7 @@
 - Icons
   - [Material Icons](https://material.io/tools/icons/?style=baseline)
   - [Icomoon](https://icomoon.io/)
+  - [data:encode svg](https://codepen.io/jakob-e/pen/doMoML?editors=0110)
 
 
 - [Colors](https://robertleroy.github.io/colors/)

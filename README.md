@@ -1,4 +1,4 @@
-###### [Crate Repository](https://github.com/robertleroy/crate) ~ *put your stuff in a crate* ~
+###### [Crate Repository](https://robertleroy.github.io/crate/) ~ *put your stuff in a crate* ~
 
 - Working sites (I think)
   - [Vue-Currentflow](https://robertleroy.github.io/currentflow/)

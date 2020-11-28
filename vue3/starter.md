@@ -1,6 +1,5 @@
 ## Vue 3 Starter
-[Vue Cli](#vue-cli) | [Vite](#vite) | [App](#app)   
-[Vue-Router](#vue-router) | [Vuex](#vuex)
+[Vue Cli](#vue-cli) | [Vite](#vite) | [App](#app) | [Vue-Router](#vue-router) | [Vuex](#vuex)
 [](#)
 
 ### Vue Cli

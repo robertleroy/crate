@@ -34,6 +34,18 @@ createApp(App).use(router).mount('#app')
 ``` js
 /* App.vue */
 
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      title: "Vite!"
+    }
+  }
+}
+</script>
+
+
 <template>
   <div id="App_Grid">
     <header>
@@ -55,16 +67,6 @@ createApp(App).use(router).mount('#app')
   </div> 
 </template>
 
-<script>
-export default {
-  name: 'App',
-  data() {
-    return {
-      title: "Vite!"
-    }
-  }
-}
-</script>
 
 <style lang="scss">
 @import './scss/baseline';

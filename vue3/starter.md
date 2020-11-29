@@ -161,3 +161,59 @@ export default createStore({
   actions: {}
 })
 ```
+
+``` js
+/* Options.api */
+
+<script>  
+  // import { mapGetters } from "vuex";
+  
+  export default {
+    name: 'Component',
+    data() {
+      return {};
+    },
+    computed: {
+      // ...mapGetters(['count']),
+      
+      count() {
+        return this.$store.getters.count;
+      }
+    },
+    methods: { 
+      increment() {
+        this.$store.commit('increment');
+      },
+      decrement() {
+        this.$store.commit('decrement');
+      }
+    },
+  };
+</script>
+
+
+/* Composition.api */
+
+<script>
+import { computed } from "vue";
+import { useStore } from "vuex";
+
+export default {
+  setup() {
+    const store = useStore();
+    const count = computed(() => store.getters.count);
+
+    function increment() {
+      store.commit("increment");
+    }
+    
+    function decrement() {
+      store.commit("decrement");
+    }
+    
+    return { title, count, increment, decrement };
+  }
+}
+</script>
+
+```

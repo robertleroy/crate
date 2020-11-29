@@ -17,21 +17,27 @@ npm run dev
 /* Utilities */
 npm install -D sass
 npm install vue-router@next
+npm install vuex@next
 ```
 
 ### App
 ``` js
-/* Main.js */
+/* main.js */
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router/router'
-import './index.css'
+// import router from './router/router'
+// import store from './store/store'
+// import './index.css'
 
-createApp(App).use(router).mount('#app')
+
+createApp(App)
+  // .use(router)
+  // .use(store)
+  .mount('#app')
 ```
 
-``` js
+``` vue
 /* App.vue */
 
 <script>
@@ -44,7 +50,6 @@ export default {
   }
 }
 </script>
-
 
 <template>
   <div id="App_Grid">
@@ -66,7 +71,6 @@ export default {
     </main>
   </div> 
 </template>
-
 
 <style lang="scss">
 @import './scss/baseline';
@@ -94,7 +98,7 @@ header {
 ### Vue-Router
 
 ``` js
-/* router/router.js */
+/* ./router/router.js */
 
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
@@ -142,3 +146,18 @@ export default router;
 
 
 ### Vuex
+
+``` js
+/* ./store/store */
+
+import { createStore } from 'vuex'
+
+export default createStore({
+  state: {
+    count: 0,
+  },
+  getters: {},
+  mutations: {},
+  actions: {}
+})
+```

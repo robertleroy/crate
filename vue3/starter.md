@@ -41,14 +41,14 @@ createApp(App)
 /* App.vue */
 
 <script>
-export default {
-  name: 'App',
-  data() {
-    return {
-      title: "Vite!"
+  export default {
+    name: 'App',
+    data() {
+      return {
+        title: "Vite!"
+      }
     }
   }
-}
 </script>
 
 <template>
@@ -73,25 +73,25 @@ export default {
 </template>
 
 <style lang="scss">
-@import './scss/baseline';
+  @import './scss/baseline';
 
-#App_Grid {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
+  #App_Grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
 
-header, main {
-  padding: 1rem 2rem;
-}
+  header, main {
+    padding: 1rem 2rem;
+  }
 
-header {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
+  header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
 
-  @include shadow(3);
-}
+    @include shadow(3);
+  }
 </style>
 ```
 

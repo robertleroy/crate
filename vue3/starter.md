@@ -45,7 +45,7 @@ createApp(App)
     name: 'App',
     data() {
       return {
-        title: "Vite!"
+        title: "Vue 3!"
       }
     }
   }

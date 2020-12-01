@@ -52,7 +52,7 @@ createApp(App)
 </script>
 
 <template>
-  <div id="App_Grid">
+  <div id="App_Grid" v-cloak>
     <header>
       <h2>{{title}}</h2>
 

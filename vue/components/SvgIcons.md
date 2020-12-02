@@ -1,23 +1,9 @@
-## [SvgIcon](https://github.com/robertleroy/crate/blob/master/vue/svgIcons.md)
+## SvgIcon.vue
 
-#### Use
-```html
-<!-- Reference symbol through component slot or icon attribute -->
+[Vue 3 version](#Vue-3)
+[Vue 2 version](#Vue-2)
+[Icon List](#icon-list)
 
-<svg-icon>earth</svg-icon>
-<svg-icon icon="earth"/>
-
-<!-- add `btn` class or attribute to add basic button feature styles,
-                                         like cursor and hover color ... -->
-
-<svg-icon icon="home" btn/>
-<svg-icon icon="home" class="btn"/>
-
-<!-- use font-size to change size -->
-<!-- viewBox attribute is also available -->
-```
-
-#### SvgIcon.vue
 ###### Vue 3
 
 ``` vue

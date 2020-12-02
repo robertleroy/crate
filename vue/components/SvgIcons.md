@@ -1,7 +1,7 @@
 ## SvgIcon.vue
 
-[Vue 3 version](#Vue-3)
-[Vue 2 version](#Vue-2)
+[Vue 3 version](#vue-3)
+[Vue 2 version](#vue-2)
 [Icon List](#icon-list)
 
 ###### Vue 3
@@ -55,7 +55,6 @@
     user-select: none;
     vertical-align: text-bottom;
   }
-
 </style>
 
 <!-- 
@@ -89,7 +88,6 @@
       svgPaths () {    
         const icons = Icons;
         let symbol = "";        
-
         // 1 - if: check for icon prop 1st priority
         // 2 - try: check for slot value 2nd priority
         // 3 - catch: default fallback value ??
@@ -103,7 +101,6 @@
             symbol = "earth"; 
           }          
         }
-
         const obj = icons.find(item => item.name === symbol);        
         return obj.path;
       }
@@ -131,14 +128,12 @@
     user-select: none;
     vertical-align: text-bottom;
   }
-
 </style>
 
 <!-- 
   import SvgIcon from "./components/svgIcon/SvgIcon";
   Vue.component("SvgIcon", SvgIcon);
 
- 
   <svg-icon icon="earth"/>
   <svg-icon>search</svg-icon>
 -->
@@ -146,7 +141,7 @@
 
 
 
-#### Icons List
+#### Icon List
 
 ```js
 /* icons.js */

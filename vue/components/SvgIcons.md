@@ -1,10 +1,10 @@
 ## SvgIcon.vue
 
-[Vue 3 version](#vue-3)
-[Vue 2 version](#vue-2)
-[Icon List](#icon-list)
+[Vue 3 version](#vue-3)  
+[Vue 2 version](#vue-2)  
+[Icon List](#icon-list)  
 
-###### Vue 3
+#### Vue 3
 
 ``` vue
 /* SvgIcon.vue */
@@ -64,8 +64,10 @@
   <SvgIcon icon="earth"/>
   <svg-icon icon="earth"/>
 -->
+```
 
-###### Vue 2
+#### Vue 2
+
 ``` vue 
 /* SvgIcon.vue */
 

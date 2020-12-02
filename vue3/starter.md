@@ -14,6 +14,9 @@ cd <project-name>
 npm install
 npm run dev
 
+/* React Template */
+npm init vite-app --template react <project-name>
+
 /* Utilities */
 npm install -D sass
 npm install vue-router@next

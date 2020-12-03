@@ -1,10 +1,10 @@
-## SvgIcon.vue
+## SvgIcon
 > *Vue 3* 
 
 [SvgIcon.Vue](#svgicon)   
 [Icon List](#icon-list)  
 
-#### SvgIcon.vue
+#### SvgIcon
 
 ``` vue
 /* SvgIcon */

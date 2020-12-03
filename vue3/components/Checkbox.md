@@ -1,3 +1,7 @@
+#### Checkbox.md
+> *Vue 3*
+
+``` vue
 <!-- Vue-3 Checkbox -->
 
 <script>
@@ -56,3 +60,4 @@ components: {"Checkbox", Checkbox},
 
 <Checkbox v-model="item.completed" />
 -->
+```

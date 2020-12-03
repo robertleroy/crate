@@ -8,7 +8,8 @@
     props: {
       opened: {
         type: [Boolean, String],
-        default: false
+        default: false,
+        required: false
       },
     },
 

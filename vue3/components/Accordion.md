@@ -8,8 +8,7 @@
     props: {
       opened: {
         type: Boolean,
-        default: false,
-
+        default: false
       },
     },
 
@@ -42,7 +41,6 @@
       @after-enter="end"
       @before-leave="start"
       @after-leave="end">
-
       <div class="content" v-show="isOpen">
         <div class="panel">
           <slot name="panel"></slot>

@@ -1,72 +1,10 @@
-## SvgIcon.vue
+## SvgIcon
+> *vue 2*
 
-[Vue 3 version](#vue-3)  
-[Vue 2 version](#vue-2)  
+[SvgIcon](#svgicon)  
 [Icon List](#icon-list)  
 
-#### Vue 3
-
-``` vue
-/* SvgIcon.vue */
-
-<script>
-  import Icons from "./icons.js";
-  export default {
-    name: 'SvgIcon',
-    props: {
-      icon: {
-        type: String,
-        required: false
-      },
-      viewBox: {
-        type: String,
-        required: false,
-        default: "0 0 24 24",
-      }
-    },
-    computed: {
-      svgPaths () {    
-        const icons = Icons;
-
-        /* If icon in icons ? use it : use icons[0] */
-        const obj = icons.find(item => item.name === this.icon) || icons[0];        
-        return obj.path;
-      }
-    }
-  };
-</script>
-
-<template>
-  <svg xmlns="http://www.w3.org/2000/svg" 
-      v-bind:viewBox="viewBox" v-html="svgPaths">
-  </svg>
-</template>
-
-<style scoped lang='scss'>
-  @import '../../scss/imports';
-
-  svg {
-    color: inherit;
-    height: 1em;
-    width: 1em;
-    font-size: 2rem;
-    border: none;
-    outline: none;
-    user-select: none;
-    vertical-align: text-bottom;
-  }
-</style>
-
-<!-- 
-  import SvgIcon from "./components/svgIcon/SvgIcon3.vue";
-  Vue.component("SvgIcon", SvgIcon);
-
-  <SvgIcon icon="earth"/>
-  <svg-icon icon="earth"/>
--->
-```
-
-#### Vue 2
+#### SvgIcon
 
 ``` vue 
 /* SvgIcon.vue */

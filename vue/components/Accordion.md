@@ -7,7 +7,7 @@
     name: 'Accordion',
     props: {
       opened: {
-        type: Boolean,
+        type: [Boolean, String],
         default: false
       },
     },

@@ -1,7 +1,7 @@
 ## Copy Directive
 > *Vue 2 & 3*
 
-``` ls
+``` js
 export const copy = ("copy", {
   // /* vue 2 */ bind: function (el, binding) { 
   /* vue 3 */ mounted: function (el, binding) {
@@ -25,11 +25,7 @@ export const copy = ("copy", {
       }
     }
     el.addEventListener("pointerdown", copyToClipboard);
-  },
-  // /* vue 2 */ unbind: function (el) {
-  // /* vue 3 */ beforeUnmount: function (el) {
-  //   el.removeEventListener('pointerdown', copyToClipboard); 
-  // }
+  }
 });
 
 // import { copy } from './directives/copy';
@@ -42,4 +38,5 @@ export const copy = ("copy", {
 //     class="icon btn btnCopy">content_copy</div>
 
 // <p id="lorem">Lorem ipsum dolor ...</p>
+
 ```

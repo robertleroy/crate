@@ -1,5 +1,5 @@
 ## Dropdown.vue
->  *Vue 3*
+>  *Vue 2 & 3*
 
 ``` vue
 <script>

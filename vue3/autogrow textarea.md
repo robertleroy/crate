@@ -1,7 +1,7 @@
 #### Autogrow Textarea
 
-Can't figure out how to make it grow on draw, 
-but will expand onfocus and grow oninput
+Does not automatically expand on draw,   
+but does expand onfocus and oninput.
 
 ``` html
 <textarea class="textbox" rows="1"

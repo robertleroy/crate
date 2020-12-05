@@ -1,10 +1,7 @@
 #### DateFormat
 
 ``` js
-/*
- * https://github.com/felixge/node-dateformat
- *
- */
+/* Adapted from https://github.com/felixge/node-dateformat */
 
  /* format ledgend
   Common

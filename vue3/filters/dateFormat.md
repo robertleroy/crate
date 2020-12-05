@@ -3,28 +3,28 @@
 ``` js
 /* Adapted from https://github.com/felixge/node-dateformat */
 
- /* format ledgend
-  Common
-    m/d/yy    
-    mmm d, yyyy
-    dddd, mmmm dS
-    h:MM TT / tt
+/* format ledgend
+ Common
+   m/d/yy    
+   mmm d, yyyy
+   dddd, mmmm dS
+   h:MM TT / tt
 
-  Named
-    'default':               'ddd mmm dd yyyy HH:MM:ss',
-    'shortDate':             'm/d/yy',                        
-    'mediumDate':            'mmm d, yyyy',
-    'longDate':              'mmmm d, yyyy',
-    'fullDate':              'dddd, mmmm d, yyyy',
-    'shortTime':             'h:MM TT',
-    'mediumTime':            'h:MM:ss TT',
-    'longTime':              'h:MM:ss TT Z',
-    'isoDate':               'yyyy-mm-dd',
-    'isoTime':               'HH:MM:ss',
-    'isoDateTime':           'yyyy-mm-dd\'T\'HH:MM:sso',
-    'isoUtcDateTime':        'UTC:yyyy-mm-dd\'T\'HH:MM:ss\'Z\'',
-    'expiresHeaderFormat':   'ddd, dd mmm yyyy HH:MM:ss Z'
- */
+Named
+  'default':               'ddd mmm dd yyyy HH:MM:ss',
+  'shortDate':             'm/d/yy',                        
+  'mediumDate':            'mmm d, yyyy',
+  'longDate':              'mmmm d, yyyy',
+  'fullDate':              'dddd, mmmm d, yyyy',
+  'shortTime':             'h:MM TT',
+  'mediumTime':            'h:MM:ss TT',
+  'longTime':              'h:MM:ss TT Z',
+  'isoDate':               'yyyy-mm-dd',
+  'isoTime':               'HH:MM:ss',
+  'isoDateTime':           'yyyy-mm-dd\'T\'HH:MM:sso',
+  'isoUtcDateTime':        'UTC:yyyy-mm-dd\'T\'HH:MM:ss\'Z\'',
+  'expiresHeaderFormat':   'ddd, dd mmm yyyy HH:MM:ss Z'
+*/
 
 (function( global ) {
   var define;

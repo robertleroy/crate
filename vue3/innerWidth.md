@@ -10,7 +10,7 @@ var app = new Vue({
   methods: {
     checkSize() {
       this.innerWidth = window.innerWidth;
-      this.InnerHeight = window.InnerHeight;
+      this.innerHeight = window.innerHeight;
     }
   },
   mounted() {

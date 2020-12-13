@@ -15,7 +15,6 @@
 </head>
   
 <body>
-
   <div id='app'>
     <header>
       <h4>{{title}}</h4>
@@ -25,18 +24,15 @@
     </header>
 
     <main>
-      <div>{{testStr || 'Main'}}</div>  
-      
+      <div>{{testStr || 'Main'}}</div>        
       <div>
         <modal-button></modal-button>
       </div>
-
     </main>
   </div> <!-- app -->
 
   <script src="./js/vue3.js"></script>
   <script src="./js/app.js"></script>
-
 </body>
 </html>
 ```

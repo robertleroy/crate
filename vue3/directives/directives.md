@@ -1,15 +1,14 @@
 ## General Directives
-> Vue 2 & Vue 3
+> Vue 2 & Vue 3 ???
 
 [v-focus](#v-focus)  
 [v-copy](#v-copy)  
 
 #### v-focus
 ``` js
-/* v-focus */
+/* vue 3 */
 app.directive('focus', {
-  // /* vue 2 */ bind(el) {
-  /* vue 3 */ mounted(el) {
+  mounted(el) {
     el.focus();
   }
 })

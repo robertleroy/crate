@@ -57,7 +57,7 @@ createApp(App)
 <template>
   <div id="appgrid" v-cloak>
     <header>
-      <h2>{{title}}</h2>
+      <h4>{{title}}</h4>
 
       <!-- <div id="nav">
         <router-link to="/">Home</router-link> |

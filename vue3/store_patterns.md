@@ -1,9 +1,9 @@
 ## Store Patterns
 
-[Pattern One](#pattern-one)  
-[Pattern Two](#pattern-two) 
-[Pattern Three](#pattern-three) 
-[Pattern Four](#pattern-four)
+[Pattern One](#pattern-one)    
+[Pattern Two](#pattern-two)   
+[Pattern Three](#pattern-three)   
+[Pattern Four](#pattern-four)  
 
 ### Pattern One
 ``` js

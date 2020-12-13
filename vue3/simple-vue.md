@@ -17,14 +17,13 @@
 <body>
   <div id='app'>
     <header>
-      <h4>{{title}}</h4>
+      <h4>{{testStr || title}}</h4>
       <input v-focus type="text" 
         v-model="testStr" 
         placeholder="test string">
     </header>
 
-    <main>
-      <div>{{testStr || 'Main'}}</div>        
+    <main>      
       <div>
         <modal-button></modal-button>
       </div>
@@ -61,23 +60,24 @@ app.component('modal-button', {
       teleport to "body": {{modalOpen}}
     </button>
 
-    <teleport to="body">
-      <div v-if="modalOpen" class="modal"
-          @click.self="modalOpen = false">
+    <teleport to="body">    
+      <transition name="fade" mode="out-in">
+        <div v-if="modalOpen" class="modal" :key="modalOpen"
+            @click.self="modalOpen = false">
 
-        <div class="panel">
-          <div>
-            I'm a teleported modal! 
-          </div>
+          <div class="panel">
+            <div>
+              I'm a teleported modal! 
+            </div>
+              
+            <div> teleport to "body": {{modalOpen}}</div>
             
-          <div> teleport to "body": {{modalOpen}}</div>
-          
-          <button @click="modalOpen = false">
-            Close
-          </button>
+            <button @click="modalOpen = false">
+              Close
+            </button>
+          </div>
         </div>
-
-      </div>
+      </transition>
     </teleport>
   `,
   data() {

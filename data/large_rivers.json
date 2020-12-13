@@ -1,0 +1,182 @@
+[
+  {
+    "River": "Amazon",
+    "Length (km)": 6400,
+    "Length (miles)": 3976,
+    "Drainage area (km2)": 7050000,
+    "Average discharge (m3/s)": 209000,
+    "Outflow": "Atlantic Ocean",
+    "Continent": "South America"
+  },
+  {
+    "River": "Congo",
+    "Length (km)": 4370,
+    "Length (miles)": 2716,
+    "Drainage area (km2)": 4014500,
+    "Average discharge (m3/s)": 41200,
+    "Outflow": "Atlantic Ocean",
+    "Continent": "Africa"
+  },
+  {
+    "River": "Ganga/Padma",
+    "Length (km)": 2704,
+    "Length (miles)": 1680,
+    "Drainage area (km2)": 1731334,
+    "Average discharge (m3/s)": 38129,
+    "Outflow": "Bay of Bengal, Indian Ocean",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Orinoco",
+    "Length (km)": 2250,
+    "Length (miles)": 1398,
+    "Drainage area (km2)": 880000,
+    "Average discharge (m3/s)": 37000,
+    "Outflow": "Atlantic Ocean",
+    "Continent": "South America"
+  },
+  {
+    "River": "Madeira",
+    "Length (km)": 1450,
+    "Length (miles)": 900,
+    "Drainage area (km2)": 1420000,
+    "Average discharge (m3/s)": 31200,
+    "Outflow": "Amazon River",
+    "Continent": "South America"
+  },
+  {
+    "River": "Yangtze",
+    "Length (km)": 6300,
+    "Length (miles)": 3915,
+    "Drainage area (km2)": 1808500,
+    "Average discharge (m3/s)": 30166,
+    "Outflow": "East China Sea, Pacific Ocean",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Guainía/Negro",
+    "Length (km)": 2230,
+    "Length (miles)": 1390,
+    "Drainage area (km2)": 691000,
+    "Average discharge (m3/s)": 28400,
+    "Outflow": "Amazon River",
+    "Continent": "South America"
+  },
+  {
+    "River": "Río de la Plata",
+    "Length (km)": 290,
+    "Length (miles)": 180,
+    "Drainage area (km2)": 3100000,
+    "Average discharge (m3/s)": 22000,
+    "Outflow": "Atlantic Ocean",
+    "Continent": "South America"
+  },
+  {
+    "River": "Brahmaputra",
+    "Length (km)": 3400,
+    "Length (miles)": 2110,
+    "Drainage area (km2)": 712035,
+    "Average discharge (m3/s)": 19800,
+    "Outflow": "Padma River",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Caquetá/Japurá",
+    "Length (km)": 2036,
+    "Length (miles)": 1265,
+    "Drainage area (km2)": 267730,
+    "Average discharge (m3/s)": 18620,
+    "Outflow": "Amazon River",
+    "Continent": "South America"
+  },
+  {
+    "River": "Yenisei",
+    "Length (km)": 3438,
+    "Length (miles)": 2136,
+    "Drainage area (km2)": 2580000,
+    "Average discharge (m3/s)": 18050,
+    "Outflow": "Kara Sea, Arctic Ocean",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Paraná",
+    "Length (km)": 4880,
+    "Length (miles)": 3050,
+    "Drainage area (km2)": 2582672,
+    "Average discharge (m3/s)": 17290,
+    "Outflow": "Río de la Plata, Atlantic Ocean",
+    "Continent": "South America"
+  },
+  {
+    "River": "Saint Lawrence",
+    "Length (km)": 3058,
+    "Length (miles)": 1900,
+    "Drainage area (km2)": 1030000,
+    "Average discharge (m3/s)": 16800,
+    "Outflow": "Gulf of Saint Lawrence, Atlantic Ocean",
+    "Continent": "North America"
+  },
+  {
+    "River": "Mississippi",
+    "Length (km)": 3730,
+    "Length (miles)": 2320,
+    "Drainage area (km2)": 3202230,
+    "Average discharge (m3/s)": 16792,
+    "Outflow": "Gulf of Mexico, Atlantic Ocean",
+    "Continent": "North America"
+  },
+  {
+    "River": "Marañón",
+    "Length (km)": 1737,
+    "Length (miles)": 1079,
+    "Drainage area (km2)": 358000,
+    "Average discharge (m3/s)": 16708,
+    "Outflow": "Amazon River",
+    "Continent": "South America"
+  },
+  {
+    "River": "Ganga at Farakka Barrage",
+    "Length (km)": 2282,
+    "Length (miles)": 1418,
+    "Drainage area (km2)": 907000,
+    "Average discharge (m3/s)": 16648,
+    "Outflow": "Padma River",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Mekong",
+    "Length (km)": 4023,
+    "Length (miles)": 2500,
+    "Drainage area (km2)": 811000,
+    "Average discharge (m3/s)": 16000,
+    "Outflow": "South China Sea, Pacific Ocean",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Lena",
+    "Length (km)": 4294,
+    "Length (miles)": 2668,
+    "Drainage area (km2)": 2490000,
+    "Average discharge (m3/s)": 15500,
+    "Outflow": "Laptev Sea, Arctic Ocean",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Irrawaddy (Ayeyarwady)",
+    "Length (km)": 2210,
+    "Length (miles)": 1370,
+    "Drainage area (km2)": 411000,
+    "Average discharge (m3/s)": 15112,
+    "Outflow": "Andaman Sea, Indian Ocean",
+    "Continent": "Asia"
+  },
+  {
+    "River": "Tocantins",
+    "Length (km)": 2699,
+    "Length (miles)": 1677,
+    "Drainage area (km2)": 920000,
+    "Average discharge (m3/s)": 13600,
+    "Outflow": "Atlantic Ocean",
+    "Continent": "South America"
+  }
+]

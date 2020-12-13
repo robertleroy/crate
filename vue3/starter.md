@@ -55,22 +55,22 @@ createApp(App)
 </script>
 
 <template>
-  <div id="App_Grid" v-cloak>
+  <div id="appgrid" v-cloak>
     <header>
       <h2>{{title}}</h2>
 
-      <div id="nav">
+      <!-- <div id="nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
-      </div>
+      </div> -->
     </header>
 
     <main>
-      <router-view v-slot="{ Component }">
+      <!-- <router-view v-slot="{ Component }">
         <transition name='fade' mode='out-in'>
           <component :is="Component"/>
         </transition>
-      </router-view>
+      </router-view> -->
     </main>
   </div> 
 </template>
@@ -78,7 +78,7 @@ createApp(App)
 <style lang="scss">
   @import './scss/baseline';
 
-  #App_Grid {
+  #appgrid {
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;

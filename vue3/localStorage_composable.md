@@ -54,14 +54,14 @@ export default {
 import { ref, onMounted } from 'vue'
 
     setup () {      
-    const { count, setCount, state, init } = store;
+    const { count, setCount, init } = store;
 
     onMounted(() => {
       init();
     })
 
     return {
-      count, setCount, state, init
+      count, setCount, init
     }
   }
 
@@ -73,3 +73,10 @@ import { ref, onMounted } from 'vue'
   </div>
   */
   ```
+  
+  #### Narrative
+  * State is set with ref.  I find it easier to work with in its own scoep than reactive.
+  * Implemented `getters` with `computed` property.
+  *
+  * Version makes an easy way to clear localStorage to defaults of codebase.
+  

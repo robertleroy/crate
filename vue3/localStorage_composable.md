@@ -75,17 +75,18 @@ import { ref, onMounted } from 'vue'
   ```
   
   #### Narrative
-1 The `store` is split into 3 parts:
-  `state` is a `ref` (easier to manipulate than `responsive` here)
-  `getters` use `computed` property to clone values
-  `mutations` single point to set state from with its scope.
+* The `store` is split into 3 parts:  
+  1  `state` is a `ref` (easier to manipulate than `responsive` here)  
+  2  `getters` use `computed` property to clone values  
+  3 `mutations` single point to set state from with its scope.  
   
-2 `localStorage` loads on `init()` and updates as `watch` detects changes in `state.value`
+* `localStorage` loads on `init()` 
+* updates when `watch` detects change in `state.value`
 
 ###### Loading
-1 load `storageObj` and check if it is null.
-2 if `storageObj` check `storageObj.version` against `Version`
-3 If version match, then populate `state` with `storageObj`
-4 Else update version number and leave state with default values. (effective reset)
-5 If null `storageObj`, update version number, which triggers `watch` to set `localStorage` with default values.
+1 load `storageObj` from `localStorage` => check if it is null.  
+2 if `storageObj` => check `storageObj.version` against `Version`  
+3 If version match => populate `state` with `storageObj`  
+4 Else update version number => leave state with default values. (effective reset)  
+5 If null `storageObj` => update version number, which triggers `watch` to set `localStorage` with default values.  
   

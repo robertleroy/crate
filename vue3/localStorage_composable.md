@@ -75,8 +75,17 @@ import { ref, onMounted } from 'vue'
   ```
   
   #### Narrative
-  * State is set with ref.  I find it easier to work with in its own scoep than reactive.
-  * Implemented `getters` with `computed` property.
-  *
-  * Version makes an easy way to clear localStorage to defaults of codebase.
+1 The `store` is split into 3 parts:
+  `state` is a `ref` (easier to manipulate than `responsive` here)
+  `getters` use `computed` property to clone values
+  `mutations` single point to set state from with its scope.
+  
+2 `localStorage` loads on `init()` and updates as `watch` detects changes in `state.value`
+
+###### Loading
+1 load `storageObj` and check if it is null.
+2 if `storageObj` check `storageObj.version` against `Version`
+3 If version match, then populate `state` with `storageObj`
+4 Else update version number and leave state with default values. (effective reset)
+5 If null `storageObj`, update version number, which triggers `watch` to set `localStorage` with default values.
   

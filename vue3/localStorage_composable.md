@@ -1,0 +1,75 @@
+## localStorage_composable
+
+``` js
+/* store.js */
+
+import { ref, computed, watch } from "vue";
+const Version = "0.1.0";
+const STORE_KEY = "test_state";
+
+/* state */
+const state = ref({
+  version: "",
+  count: 0,
+});
+
+/* getters */
+const count = computed(() => state.value.count)
+
+/* mutaions */
+const setCount = function (i) {
+  state.value.count += i;
+}
+
+// #region LocalStorage 
+function init() {
+  const storageObj = JSON.parse(localStorage.getItem(STORE_KEY));
+      
+  if (storageObj) {
+    if ( storageObj.version === Version ) {
+      console.log("setting store");
+      Object.assign(state.value, storageObj);
+    } else {
+      console.log("resetting store");
+      state.value.version = Version;
+    }
+  } else {
+    state.value.version = Version;
+  }
+}
+
+watch(state.value, () => {
+  localStorage.setItem(STORE_KEY, JSON.stringify(state.value));
+})
+// #endregion LocalStorage 
+
+export default { 
+  count, setCount, state, init 
+};
+```
+
+``` js
+/* app.vue */
+
+import { ref, onMounted } from 'vue'
+
+    setup () {      
+    const { count, setCount, state, init } = store;
+
+    onMounted(() => {
+      init();
+    })
+
+    return {
+      count, setCount, state, init
+    }
+  }
+
+  /* 
+  <div class='number'>
+    <div class="icon btn" @click="setCount(-1)">remove</div>
+    <div >{{count}}</div>
+    <div class="icon btn" @click="setCount(1)">add</div>    
+  </div>
+  */
+  ```

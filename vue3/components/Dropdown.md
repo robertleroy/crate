@@ -127,9 +127,10 @@
 import Dropdown from './components/Dropdown'
 
 components: {
-  'Dropdown': Dropdown'
-}
+  'Dropdown': Dropdown
+},
 
+// data //
 items: [
   { name: 'Item One', value: 1 },
   { name: 'Item Two', value: 2 },
@@ -137,15 +138,17 @@ items: [
 ],
 selectedItem: {},
 
-methods: {
-  updateSelected(obj) {
-    this.selectedObject = obj;
-    console.log(this.selectedItem.title);
-  }
+// methods //
+updateSelected(obj) {
+  console.log("obj: ", obj);
+  this.selectedItem = obj;
+  console.log(this.selectedItem.name);
 }
+
 
 <Dropdown 
         :options="items"
         placeholder="choose something!"
         @selected="selectItem"/>
 -->
+```

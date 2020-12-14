@@ -131,9 +131,9 @@ components: {
 }
 
 items: [
-  { title: 'Item One', value: 1 },
-  { title: 'Item Two', value: 2 },
-  { title: 'Item Three', value: 3 }
+  { name: 'Item One', value: 1 },
+  { name: 'Item Two', value: 2 },
+  { name: 'Item Three', value: 3 }
 ],
 selectedItem: {},
 

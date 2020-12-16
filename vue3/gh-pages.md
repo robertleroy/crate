@@ -1,6 +1,6 @@
 # gh-pages
 
-Simplest way to do this is with `[vue-cli-plugin-gh-pages](https://github.com/JaZo/vue-cli-plugin-gh-pages)`
+Simplest way to do this is with [vue-cli-plugin-gh-pages](https://github.com/JaZo/vue-cli-plugin-gh-pages)
 
 ## 1. Create Repository
 `https://github.com/robertleroy/PROJECT_NAME`

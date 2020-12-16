@@ -7,6 +7,7 @@
 
 ## 2. Commit project
 ```js
+git init
 git add .
 git commit -m 'first commit'
 git remote add origin https://github.com/robertleroy/PROJECT_NAME.git
@@ -48,7 +49,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:robertleroy/robertleroy.github.io.git master
 
 
-///  USE THIS ONE ///   ///  USE THIS ONE ///    ///  USE THIS ONE ///
+# ///  USE THIS ONE ///   ///  USE THIS ONE ///    ///  USE THIS ONE ///
 # if you are deploying to https://robertleroy.github.io/PROJECT_NAME   
 # git push -f git@github.com:robertleroy/PROJECT_NAME.git master:gh-pages
 
